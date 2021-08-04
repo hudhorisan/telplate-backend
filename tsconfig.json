@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "removeComments": true,
+    "outDir": "./dist/api",
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@core": ["api/core/*"],
+      "@classes": ["api/core/types/classes"],
+      "@classes/*": ["api/core/types/classes/*"],
+      "@config/*": ["api/config/*"],
+      "@controllers/*": ["api/core/controllers/*"],
+      "@decorators/*": ["api/core/types/decorators/*"],
+      "@enums": ["api/core/types/enums"],
+      "@enums/*": ["api/core/types/enums/*"],
+      "@errors": ["api/core/types/errors"],
+      "@errors/*": ["api/core/types/errors/*"],
+      "@events": ["api/core/types/events"],
+      "@events/*": ["api/core/types/events/*"],
+      "@factories/*": ["api/core/factories/*"],
+      "@interfaces": ["api/core/types/interfaces"],
+      "@interfaces/*": ["api/core/types/interfaces/*"],
+      "@middlewares/*": ["api/core/middlewares/*"],
+      "@models/*": ["api/core/models/*"],
+      "@repositories/*": ["api/core/repositories/*"],
+      "@resources/*": ["api/resources/*"],
+      "@routes/*": ["api/core/routes/v1/*"],
+      "@schemas": ["api/core/types/schemas"],
+      "@schemas/*": ["api/core/types/schemas/*"],
+      "@services/*": ["api/core/services/*"],
+      "@shared/*": ["api/shared/*"],
+      "@types": ["api/core/types/types"],
+      "@types/*": ["api/core/types/types/*"],
+      "@utils/*": ["api/core/utils/*"],
+      "@validations/*": ["api/core/validations/*"]
+    },
+    "lib": ["dom", "ESNext"],
+    "target": "ESNext",
+    "module": "CommonJS",
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "exclude" : [
+    "**/**/node_modules",
+    "node_modules"
+  ]
+}
